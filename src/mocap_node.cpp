@@ -180,14 +180,14 @@ namespace mocap_optitrack
         {
           serverDescription.enableOptitrack = param.as_bool();
         }
-        else
-        {
-          result.successful = false;
-          result.reason     = "Parameter is not dynamic reconfigurable";
-          RCLCPP_WARN(node->get_logger(),
-                      "Parameter %s not dynamically reconfigurable",
-                      param.get_name().c_str());
-        }
+        // else
+        // {
+        //   result.successful = false;
+        //   result.reason     = "Parameter is not dynamic reconfigurable";
+        //   RCLCPP_WARN(node->get_logger(),
+        //               "Parameter %s not dynamically reconfigurable",
+        //               param.get_name().c_str());
+        // }
       }
       return result;
     }
